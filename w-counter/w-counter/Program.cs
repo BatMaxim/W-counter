@@ -11,10 +11,8 @@ namespace w_counter
             inputFilePath.SetPathFromConsole("Введите путь входного файла: ", true);
             var outputFilePath = new Path();
             outputFilePath.SetPathFromConsole("Введите путь выходного файла: ");
-            foreach(var item in FileReader.ReadFromFile(inputFilePath.GetPath()).OrderByDescending(item => item.Value))
-            {
-                Console.WriteLine($"{item.Key} - {item.Value}");
-            }
+            var words = FileReader.ReadFromFile(inputFilePath.GetPath());
+            FileWriter.WriteInFile(outputFilePath.GetPath(), words);
         }
     }
 }
