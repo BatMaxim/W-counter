@@ -6,7 +6,9 @@ namespace w_counter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var inputFilePath = new Path();
+            inputFilePath.SetPathFromConsole("Введите путь до начального файла: ", true);
+            Console.WriteLine(inputFilePath.GetPath());
         }
     }
 }

@@ -1,0 +1,11 @@
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\w-counter.exe
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\w-counter.deps.json
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\w-counter.runtimeconfig.json
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\w-counter.runtimeconfig.dev.json
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\w-counter.dll
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\w-counter.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.csprojAssemblyReference.cache
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.AssemblyInfoInputs.cache
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.AssemblyInfo.cs
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.dll
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.pdb
