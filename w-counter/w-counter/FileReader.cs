@@ -18,9 +18,12 @@ namespace w_counter
                 foreach (var word in Regex.Matches(line, pattern))
                 {
                     if (words.ContainsKey(word.ToString().ToLower()))
+                    {
                         words[word.ToString().ToLower()]++;
-                    else
-                        words.Add(word.ToString().ToLower(), 1);
+                        continue;
+                    }
+
+                    words.Add(word.ToString().ToLower(), 1);
                 }
             }
             return words;
