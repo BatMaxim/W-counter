@@ -23,10 +23,8 @@ namespace w_counter
             {
                 Console.Write(message);
                 path = Console.ReadLine();
-                if (!check || File.Exists(path))
-                {
-                    break;
-                }
+                if (!check || File.Exists(path)) break;
+
                 Console.WriteLine("Нет такого файла");
             }
            
