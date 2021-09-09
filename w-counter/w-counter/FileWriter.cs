@@ -5,24 +5,23 @@ using System.Linq;
 
 namespace w_counter
 {
-    static class FileWriter
+    class FileWriter
     {
-        public static void WriteInFile(string path, Dictionary<string, int> words)
+        public static bool WriteInFile(string path, Dictionary<string, int> words)
         {
-            try
+            var newPath = GenerateFilePath(path);
+            using var streamWriter = new StreamWriter(newPath);
+            foreach (var item in words.OrderByDescending(item => item.Value))
             {
-                System.IO.File.Delete(path);
-                using var streamWriter = new StreamWriter(path);
-                foreach (var item in words.OrderByDescending(item => item.Value))
-                {
-                    streamWriter.WriteLine($"{item.Key} - {item.Value}");
-                }
-                Console.WriteLine("Запись выполнена");
+                streamWriter.WriteLine($"{item.Key} - {item.Value}");
             }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception.Message);
-            }
+            return true;
+        }
+        static string GenerateFilePath(string path)
+        {
+            var mainPath = path.Remove(path.LastIndexOf("."));
+            var NameMode = DateTime.Now.ToString("yyyyMMddHHmmss");
+            return $"{mainPath}_{NameMode}.txt" ;
         }
     }
 }
