@@ -4,6 +4,17 @@
     "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\w-counter\\w-counter.csproj": {}
   },
   "projects": {
+    "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj",
+        "projectName": "TextProcessing",
+        "projectPath": "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\w-counter\\w-counter.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +42,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj": {
+                "projectPath": "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

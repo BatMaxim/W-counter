@@ -6,4 +6,8 @@
     <RootNamespace>w_counter</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TextProcessing\TextProcessing.csproj" />
+  </ItemGroup>
+
 </Project>

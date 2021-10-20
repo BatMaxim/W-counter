@@ -9,3 +9,6 @@ C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.AssemblyInfo.cs
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.dll
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\TextProcessing.dll
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\bin\Debug\netcoreapp3.1\TextProcessing.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\w-counter\obj\Debug\netcoreapp3.1\w-counter.csproj.CopyComplete
