@@ -5,7 +5,6 @@
   },
   "projects": {
     "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj": {
-      "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\TextProcessing\\TextProcessing.csproj",
         "projectName": "TextProcessing",
@@ -25,7 +24,7 @@
         "outputPath": "C:\\Users\\gato-\\OneDrive\\Документы\\GitHub\\W-counter\\w-counter\\w-counter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [

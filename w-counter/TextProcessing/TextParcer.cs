@@ -10,12 +10,19 @@ namespace TextProcessing
 {
     class TextParcer
     {
-        public static Dictionary<string, int> ParceText(String text)
+        static Dictionary<string, int> ParceText(String text)
         {
             var pattern = @"([A-Za-zА-Яа-я\-`]+)";
-
             var words = new Dictionary<string, int>();
-            Console.Write(text);
+            foreach (var word in Regex.Matches(text, pattern))
+            {
+                if (words.ContainsKey(word.ToString().ToLower()))
+                {
+                    words[word.ToString().ToLower()]++;
+                    continue;
+                }
+                words.Add(word.ToString().ToLower(), 1);
+            }
             return words;
         }
 
