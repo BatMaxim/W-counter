@@ -22,7 +22,7 @@ namespace w_counter
             }
 
             var words = FileReader.ReadFromFile(inputFilePath.Path, true);
-            if(FileWriter.WriteInFile(inputFilePath.Path, words)) Console.WriteLine("Запись выполнена");
+            if(FileWriter.WriteInFile(inputFilePath.Path, words, "_MT")) Console.WriteLine("Запись выполнена");
             words = FileReader.ReadFromFile(inputFilePath.Path, false);
             if(FileWriter.WriteInFile(inputFilePath.Path, words)) Console.WriteLine("Запись выполнена");
         }

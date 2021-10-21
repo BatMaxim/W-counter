@@ -14,6 +14,7 @@ namespace TextProcessing
     {
         static MatchCollection parcedText;
         private static ConcurrentDictionary<string, int> wordsMT = new ConcurrentDictionary<string, int>();
+        static object locker = new object(); 
         static Dictionary<string, int> ParceText(String text)
         {
             var pattern = @"([A-Za-zА-Яа-я\-`]+)";
@@ -34,12 +35,14 @@ namespace TextProcessing
         {
             for (int i = bound.start; i < bound.end; i++)
             {
-                if (wordsMT.ContainsKey(parcedText[i].ToString().ToLower()))
+                if ( !(wordsMT.TryAdd(parcedText[i].ToString().ToLower(), 1)))
                 {
-                    wordsMT[parcedText[i].ToString().ToLower()]++;
-                    continue;
+                    lock (locker)
+                    {
+                        wordsMT[parcedText[i].ToString().ToLower()]++;
+                    }
+                   
                 }
-                wordsMT.TryAdd(parcedText[i].ToString().ToLower(), 1);
             }
         }
         static List<Bound> GetBounds(int size)

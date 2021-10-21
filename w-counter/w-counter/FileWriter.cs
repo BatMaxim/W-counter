@@ -7,9 +7,9 @@ namespace w_counter
 {
     class FileWriter
     {
-        public static bool WriteInFile(string path, Dictionary<string, int> words)
+        public static bool WriteInFile(string path, Dictionary<string, int> words, string flag = "")
         {
-            var newPath = GenerateFilePath(path);
+            var newPath = GenerateFilePath(path, flag);
             using var streamWriter = new StreamWriter(newPath);
             foreach (var item in words.OrderByDescending(item => item.Value))
             {
@@ -17,11 +17,11 @@ namespace w_counter
             }
             return true;
         }
-        static string GenerateFilePath(string path)
+        static string GenerateFilePath(string path, string flag)
         {
             var mainPath = path.Remove(path.LastIndexOf("."));
             var NameMode = DateTime.Now.ToString("yyyyMMddHHmmss");
-            return $"{mainPath}_{NameMode}.txt" ;
+            return $"{mainPath}_{NameMode}{flag}.txt" ;
         }
     }
 }
