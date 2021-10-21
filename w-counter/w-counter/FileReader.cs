@@ -10,13 +10,13 @@ namespace w_counter
 {
     class FileReader
     {
-        static void ShowTime(Stopwatch stopWatch)
+        static void ShowTime(Stopwatch stopWatch, string title)
         {
             var ts = stopWatch.Elapsed;
             var elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
                 ts.Hours, ts.Minutes, ts.Seconds,
                 ts.Milliseconds / 10);
-            Console.WriteLine("RunTime " + elapsedTime);
+            Console.WriteLine($"RunTime {title} {elapsedTime}");
         }
         public static Dictionary<string, int> ReadFromFile(string path, bool useMultyThread)
         {
@@ -37,14 +37,14 @@ namespace w_counter
                 stopWatch.Start();
                 words = (Dictionary<string, int>) methodMT.Invoke(obj, text);
                 stopWatch.Stop();
-                ShowTime(stopWatch);
+                ShowTime(stopWatch, "MT");
                 return words;
             }
                 
             stopWatch.Start();
             words = (Dictionary<string, int>) method.Invoke(obj, text);
             stopWatch.Stop();
-            ShowTime(stopWatch);
+            ShowTime(stopWatch,"Common");
             return words;
         }
     }
