@@ -12,9 +12,10 @@ namespace WcfServiceWCounter
     // ПРИМЕЧАНИЕ. Чтобы запустить клиент проверки WCF для тестирования службы, выберите элементы Service1.svc или Service1.svc.cs в обозревателе решений и начните отладку.
     public class Service1 : IService1
     {
-        public string GetData(int value)
+        public Dictionary<string, int> GetData(String value)
         {
-            return string.Format("You entered: {0}", value);
+            var words = new Dictionary<string, int>();
+            return words;
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
