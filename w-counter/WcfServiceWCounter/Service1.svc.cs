@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
@@ -8,14 +9,15 @@ using System.Text;
 
 namespace WcfServiceWCounter
 {
-    // ПРИМЕЧАНИЕ. Команду "Переименовать" в меню "Рефакторинг" можно использовать для одновременного изменения имени класса "Service1" в коде, SVC-файле и файле конфигурации.
-    // ПРИМЕЧАНИЕ. Чтобы запустить клиент проверки WCF для тестирования службы, выберите элементы Service1.svc или Service1.svc.cs в обозревателе решений и начните отладку.
     public class Service1 : IService1
     {
-        public Dictionary<string, int> GetData(String value)
+        public Dictionary<string, int> GetData(string textInFile)
         {
-            var words = new Dictionary<string, int>();
-            return words;
+            var type = Type.GetType("TextProcessing.TextParcer, TextProcessing");
+            var methodMT = type.GetMethod("ParceTextMultiThread", BindingFlags.Public | BindingFlags.Static);
+            var text = new object[] { textInFile };
+            var words = (Dictionary<string, int>)methodMT.Invoke(null, text);
+            return words;  
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)

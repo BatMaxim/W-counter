@@ -13,7 +13,7 @@ namespace TextProcessing
     class TextParcer
     {
         static MatchCollection parcedText;
-        private static ConcurrentDictionary<string, int> wordsMT = new ConcurrentDictionary<string, int>();
+        private static ConcurrentDictionary<string, int> wordsMT;
         static object locker = new object(); 
         static Dictionary<string, int> ParceText(String text)
         {
@@ -55,7 +55,7 @@ namespace TextProcessing
         
         public static Dictionary<string, int> ParceTextMultiThread(String text)
         {
-           
+            wordsMT = new ConcurrentDictionary<string, int>();
             var pattern = @"([A-Za-zА-Яа-я\-`]+)";
             parcedText = Regex.Matches(text, pattern);
             var bounds = GetBounds(parcedText.Count);

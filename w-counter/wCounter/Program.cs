@@ -22,10 +22,8 @@ namespace wCounter
                 return;
             }
 
-            var words = FileReader.ReadFromFile(inputFilePath.Path, true);
+            var words = FileReader.ReadFromFile(inputFilePath.Path);
             if (FileWriter.WriteInFile(inputFilePath.Path, words, "_MT")) Console.WriteLine("Запись выполнена");
-            words = FileReader.ReadFromFile(inputFilePath.Path, false);
-            if (FileWriter.WriteInFile(inputFilePath.Path, words)) Console.WriteLine("Запись выполнена");
         }
     }
 }

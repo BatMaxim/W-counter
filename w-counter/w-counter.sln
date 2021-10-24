@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceWCounter", "WcfServiceWCounter\WcfServiceWCounter.csproj", "{F5AF0B3E-6BC3-4C3B-BB66-2C92767F921F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wCounter", "wCounter\wCounter.csproj", "{F36921CC-D884-4797-89A6-B7D264956978}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5AF0B3E-6BC3-4C3B-BB66-2C92767F921F} = {F5AF0B3E-6BC3-4C3B-BB66-2C92767F921F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

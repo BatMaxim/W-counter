@@ -14,7 +14,7 @@ namespace WcfServiceWCounter
     {
 
         [OperationContract]
-        Dictionary<string, int> GetData(String value);
+        Dictionary<string, int> GetData(string value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

@@ -18,32 +18,19 @@ namespace wCounter
                 ts.Milliseconds / 10);
             Console.WriteLine($"RunTime {title} {elapsedTime}");
         }
-        public static Dictionary<string, int> ReadFromFile(string path, bool useMultyThread)
+        public static Dictionary<string, int> ReadFromFile(string path)
         {
             var textInFile = "";
             using (StreamReader sr = new StreamReader(path))
             {
                 textInFile = sr.ReadToEnd();
             }
-            var type = Type.GetType("TextProcessing.TextParcer, TextProcessing");
-            var method = type.GetMethod("ParceText", BindingFlags.NonPublic | BindingFlags.Static);
-            var methodMT = type.GetMethod("ParceTextMultiThread", BindingFlags.Public | BindingFlags.Static);
-            var text = new object[] { textInFile };
-            var stopWatch = new Stopwatch();
             Dictionary<string, int> words;
-            if (useMultyThread)
+            using (var client = new ServiceReference1.Service1Client())
             {
-                stopWatch.Start();
-                words = (Dictionary<string, int>) methodMT.Invoke(null, text);
-                stopWatch.Stop();
-                ShowTime(stopWatch, "MT");
-                return words;
+                words = client.GetData(textInFile);
             }
-                
-            stopWatch.Start();
-            words = (Dictionary<string, int>) method.Invoke(null, text);
-            stopWatch.Stop();
-            ShowTime(stopWatch,"Common");
+              
             return words;
         }
     }
