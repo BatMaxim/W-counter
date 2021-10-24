@@ -1,0 +1,7 @@
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\bin\WcfServiceWCounter.dll.config
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\bin\WcfServiceWCounter.dll
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\bin\WcfServiceWCounter.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.csproj.AssemblyReference.cache
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.csproj.CoreCompileInputs.cache
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.dll
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.pdb
