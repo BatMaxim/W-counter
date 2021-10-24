@@ -1,5 +1,5 @@
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\bin\Debug\TextProcessing.dll
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\bin\Debug\TextProcessing.pdb
-C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.csprojAssemblyReference.cache
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.dll
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.csproj.CoreCompileInputs.cache

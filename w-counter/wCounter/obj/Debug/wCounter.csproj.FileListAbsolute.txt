@@ -1,0 +1,10 @@
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.csproj.CoreCompileInputs.cache
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\wCounter.exe.config
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\wCounter.exe
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\wCounter.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.exe
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\TextProcessing.dll
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\TextProcessing.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.csproj.AssemblyReference.cache
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.csproj.CopyComplete
