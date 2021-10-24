@@ -7,3 +7,4 @@ C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfService
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.csproj.CoreCompileInputs.cache
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.dll
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\WcfServiceWCounter\obj\Debug\WcfServiceWCounter.csproj.CopyComplete
