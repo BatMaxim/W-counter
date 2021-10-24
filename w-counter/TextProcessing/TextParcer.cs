@@ -14,7 +14,6 @@ namespace TextProcessing
     {
         static MatchCollection parcedText;
         private static ConcurrentDictionary<string, int> wordsMT;
-        static object locker = new object(); 
         static Dictionary<string, int> ParceText(String text)
         {
             var pattern = @"([A-Za-zА-Яа-я\-`]+)";
