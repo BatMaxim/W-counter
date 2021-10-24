@@ -35,14 +35,7 @@ namespace TextProcessing
         {
             for (int i = bound.start; i < bound.end; i++)
             {
-                if ( !(wordsMT.TryAdd(parcedText[i].ToString().ToLower(), 1)))
-                {
-                    lock (locker)
-                    {
-                        wordsMT[parcedText[i].ToString().ToLower()]++;
-                    }
-                   
-                }
+                wordsMT.AddOrUpdate(parcedText[i].ToString().ToLower(), 1, (key, val) => val + 1);
             }
         }
         static List<Bound> GetBounds(int size)
