@@ -28,21 +28,20 @@ namespace w_counter
             var type = Type.GetType("TextProcessing.TextParcer, TextProcessing");
             var method = type.GetMethod("ParceText", BindingFlags.NonPublic | BindingFlags.Static);
             var methodMT = type.GetMethod("ParceTextMultiThread", BindingFlags.Public | BindingFlags.Static);
-            var obj = Activator.CreateInstance(type);
             var text = new object[] { textInFile };
             var stopWatch = new Stopwatch();
             Dictionary<string, int> words;
             if (useMultyThread)
             {
                 stopWatch.Start();
-                words = (Dictionary<string, int>) methodMT.Invoke(obj, text);
+                words = (Dictionary<string, int>) methodMT.Invoke(null, text);
                 stopWatch.Stop();
                 ShowTime(stopWatch, "MT");
                 return words;
             }
                 
             stopWatch.Start();
-            words = (Dictionary<string, int>) method.Invoke(obj, text);
+            words = (Dictionary<string, int>) method.Invoke(null, text);
             stopWatch.Stop();
             ShowTime(stopWatch,"Common");
             return words;
