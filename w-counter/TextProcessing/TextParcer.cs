@@ -14,21 +14,6 @@ namespace TextProcessing
     {
         static MatchCollection parcedText;
         private static ConcurrentDictionary<string, int> wordsMT;
-        static Dictionary<string, int> ParceText(String text)
-        {
-            var pattern = @"([A-Za-zА-Яа-я\-`]+)";
-            var words = new Dictionary<string, int>();
-            foreach (var word in Regex.Matches(text, pattern))
-            {
-                if (words.ContainsKey(word.ToString().ToLower()))
-                {
-                    words[word.ToString().ToLower()]++;
-                    continue;
-                }
-                words.Add(word.ToString().ToLower(), 1);
-            }
-            return words;
-        }
 
         static void ParceTextPart(Bound bound)
         {
