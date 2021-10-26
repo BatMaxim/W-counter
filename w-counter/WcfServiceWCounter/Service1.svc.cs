@@ -14,9 +14,11 @@ namespace WcfServiceWCounter
         public Dictionary<string, int> GetData(string textInFile)
         {
             var type = Type.GetType("TextProcessing.TextParcer, TextProcessing");
-            var methodMT = type.GetMethod("ParceTextMultiThread", BindingFlags.Public | BindingFlags.Static);
+            var methodMT = type.GetMethod("ParceTextMultiThread", BindingFlags.Public | BindingFlags.Instance);
             var text = new object[] { textInFile };
-            var words = (Dictionary<string, int>)methodMT.Invoke(null, text);
+            var obj = Activator.CreateInstance(type);
+            var words = (Dictionary<string, int>)methodMT.Invoke(obj, text);
+            
             return words;  
         }
 

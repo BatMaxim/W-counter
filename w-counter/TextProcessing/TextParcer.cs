@@ -12,17 +12,17 @@ namespace TextProcessing
 {
     class TextParcer
     {
-        static MatchCollection parcedText;
-        private static ConcurrentDictionary<string, int> wordsMT;
+        MatchCollection parcedText;
+        ConcurrentDictionary<string, int> wordsMT;
 
-        static void ParceTextPart(Bound bound)
+        void ParceTextPart(Bound bound)
         {
             for (int i = bound.start; i < bound.end; i++)
             {
                 wordsMT.AddOrUpdate(parcedText[i].ToString().ToLower(), 1, (key, val) => val + 1);
             }
         }
-        static List<Bound> GetBounds(int size)
+        List<Bound> GetBounds(int size)
         {
             var bounds = new List<Bound>();
             var partSize = (int)Math.Ceiling((double)size/4);
@@ -37,7 +37,7 @@ namespace TextProcessing
             return bounds;
         }
         
-        public static Dictionary<string, int> ParceTextMultiThread(String text)
+        public Dictionary<string, int> ParceTextMultiThread(String text)
         {
             wordsMT = new ConcurrentDictionary<string, int>();
             var pattern = @"([A-Za-zА-Яа-я\-`]+)";

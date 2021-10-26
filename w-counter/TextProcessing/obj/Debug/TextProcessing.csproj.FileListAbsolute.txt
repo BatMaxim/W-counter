@@ -3,3 +3,4 @@ C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProces
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.csproj.CoreCompileInputs.cache
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.dll
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.pdb
+C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\TextProcessing\obj\Debug\TextProcessing.csproj.AssemblyReference.cache
