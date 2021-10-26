@@ -11,12 +11,11 @@ namespace wCounter
         {
             var newPath = GenerateFilePath(path, flag);
             using (var streamWriter = new StreamWriter(newPath))
-            {
                 foreach (var item in words.OrderByDescending(item => item.Value))
                 {
                     streamWriter.WriteLine($"{item.Key} - {item.Value}");
                 }
-            }
+
             return true;
         }
         static string GenerateFilePath(string path, string flag)
