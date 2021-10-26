@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace wCounter
 {
-    class FileReader
+    static class FileReader
     {
         public static Dictionary<string, int> ReadFromFile(string path)
         {

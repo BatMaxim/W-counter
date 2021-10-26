@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace wCounter
 {
-    class FileWriter
+    static class FileWriter
     {
         public static bool WriteInFile(string path, Dictionary<string, int> words, string flag = "")
         {

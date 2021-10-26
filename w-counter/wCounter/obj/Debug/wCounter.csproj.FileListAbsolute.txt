@@ -7,4 +7,3 @@ C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\o
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\TextProcessing.dll
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\bin\Debug\TextProcessing.pdb
 C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.csproj.AssemblyReference.cache
-C:\Users\gato-\OneDrive\Документы\GitHub\W-counter\w-counter\wCounter\obj\Debug\wCounter.csproj.CopyComplete
